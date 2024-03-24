@@ -45,7 +45,9 @@ return redirect('customer/view');
           return redirect('customer/view');  
         }else{
             $data=compact('userinfo');
+            echo 'test';
             return view('form')->with($data);
+    
         }
     }
     
